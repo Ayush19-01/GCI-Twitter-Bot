@@ -1,4 +1,3 @@
-#https://codein.withgoogle.com/tasks/5127817444982784/?sp-organization=5763602946981888&sp-is_beginner=False
 #Made for the sole purpose of GCI 2019
 from selenium import webdriver
 import time
