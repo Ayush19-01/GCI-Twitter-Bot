@@ -7,8 +7,8 @@ a=feedparser.parse("https://fedoramagazine.org/feed/")
 title=a["entries"][0]["title"]
 link=a["entries"][0]["links"][0]["href"]
 toadd="Have a read on this latest fedora magazine article on\n"+title+"\nClick to read the article:"+link
-a=input("Enter twitter username")
-b=input("Enter twitter password")
+a=input("Enter twitter username:")
+b=input("Enter twitter password:")
 driver = webdriver.Chrome()
 driver.get("https://twitter.com/login")
 username = driver.find_element_by_css_selector("input[placeholder='Phone, email or username']")
@@ -17,7 +17,7 @@ username.send_keys(a)
 password.send_keys(b)
 submit = driver.find_element_by_xpath("//button[text()='Log in']")
 submit.click()
-time.sleep(5)
+time.sleep(7)
 for i in range(14):
     pyautogui.press('tab')
 time.sleep(1)
