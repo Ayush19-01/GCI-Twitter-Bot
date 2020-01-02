@@ -1,5 +1,7 @@
 # GCI-Twitter-Bot
 ___Modules Used: feedparser, selenium, pyautogui___
+
+___There are two versions choose the one which is compatible with your OS___
 ## How it works:
 Firtsly the feedparser module is used to get the link and the title of the latest fedora blog.
 
